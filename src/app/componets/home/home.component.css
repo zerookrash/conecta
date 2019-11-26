@@ -25,6 +25,7 @@ main {
 }
 
 .tCard {
+    width: 100%;
     background-color: #07be92;
     color: #ffffff;
 }
@@ -66,12 +67,12 @@ main {
 
 .cantCard {
     font-size: 12px;
-    margin-left: 10rem;
+    margin-left: 6.5rem;
 }
 
 .cantCard2 {
     font-size: 12px;
-    margin-left: 8.5rem;
+    margin-left: 5rem;
 }
 
 .mcImg {

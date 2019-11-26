@@ -1,0 +1,36 @@
+.float1 {
+    float: left;
+    margin-left: 15px;
+    margin-top: 1.5rem;
+}
+
+.float2 {
+    float: right;
+    margin-right: 15px;
+    margin-top: 2rem;
+}
+
+.tarjetas {
+    font-size: 12px;
+}
+
+input {
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #85929E;
+    border-radius: 5px;
+    text-indent: 10px;
+    margin: 10px 6px;
+}
+
+input:focus,
+input:active {
+    border-color: #05be94;
+    box-shadow: 0 1px 1px #05be94 inset, 0 0 8px #05be94;
+    outline: 0 none;
+}
+
+:focus::placeholder {
+    color: #05be94;
+}

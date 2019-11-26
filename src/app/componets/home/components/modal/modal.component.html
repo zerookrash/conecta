@@ -1,0 +1,63 @@
+<!-- Button de la modal -->
+<button type="button" class="btn btn-block btn-outline-success" data-toggle="modal" data-target="#exampleModal">
+    <div class="tarjetas">AGREGAR TARJETA  <i class="fa fa-plus"></i></div>
+   
+</button>
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div >
+        <div class="row align-items-center">
+          <div class="col-6">
+            <img class="float1" src="assets/img/logoS.png" alt="BankApp">
+          </div>
+          <div class="col-6">
+            <h4 class="float2">Agregar tarjeta</h4>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Formulario -->
+        
+        <form class="container" [formGroup]="tarjeta" (submit)="envio()">
+
+            <div class="row">
+                <input type="text" placeholder="Número de tarjeta" formControlName="numero">
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                  <input type="text"  placeholder="Cuenta" formControlName="cuenta">
+              </div>
+              <div class="col-12 col-md-6">
+                  <input type="text" placeholder="Issure" formControlName="issure">
+              </div>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Nombre de tarjeta" formControlName="nombre">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Marca" formControlName="marca">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Estatus" formControlName="estatus">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Saldo" formControlName="saldo">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Tipo de cuenta" formControlName="tipo">
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-outline-success">Agregar tarjeta</button>
+          </div>
+          </form>
+          
+          <!-- Formulario -->
+        </div>
+    </div>
+  </div>
+</div>
