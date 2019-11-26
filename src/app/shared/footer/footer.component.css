@@ -1,0 +1,13 @@
+section {
+    background: #f5f5f5;
+    padding: 2rem;
+}
+
+.izq {
+    color: #6F6D6D;
+}
+
+.der > img {
+    width: 30%;
+    float: right;
+} 

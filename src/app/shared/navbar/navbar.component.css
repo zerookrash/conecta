@@ -1,0 +1,38 @@
+.navbar {
+    background: #ffffff;
+    height: 8em;
+}
+
+.navbar .navbar-nav {
+    font-size: 23px;
+    margin-left: 10rem;
+    height: 100%;
+}
+
+.navbar .navbar-nav > li {
+    margin: 0 3rem;
+    margin-top: auto;
+}
+
+.navbar .navbar-nav > li .active {
+    background: #c6c6c6;
+    color: #05be92;
+}
+
+.navbar .datos > ul {
+    list-style: none;
+}
+
+.navbar .datos > ul .nombre {
+    font-size: 20px;
+}
+
+.navbar .datos > ul .fecha {
+    font-size: 11px;
+}
+
+.navbar .nav-item > a {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
