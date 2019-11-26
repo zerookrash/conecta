@@ -18,7 +18,7 @@ main {
 }
 
 .wcard {
-    width: 18rem;
+    width: 25rem;
     height: 5rem;
     margin: auto 3rem;
     text-align: start;
@@ -37,7 +37,7 @@ main {
 
 .titleC {
     color: #0791bf;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .price {
