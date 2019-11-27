@@ -24,6 +24,7 @@ export class ModalComponent {
 
   envio() {
     console.log(this.tarjeta.value);
+    alert( JSON.stringify(this.tarjeta.value) );
   }
 
 }
