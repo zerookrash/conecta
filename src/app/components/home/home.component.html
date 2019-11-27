@@ -1,0 +1,90 @@
+<main>
+   <section *ngIf="saldo" class="head cards">
+
+        <div class="card text-start wcard">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6 titleC">SALDO GENERAL ENCUENTAS</div>
+                <div class="col-6 price">$ {{saldos.saldo[0].saldo_general}}</div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="card text-start wcard">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6 titleC">TOTAL DE INGRESOS</div>
+                <div class="col-6 price2">$ {{saldos.saldo[0].ingresos}} </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="card text-start wcard">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6 titleC">TOTAL DE GASTOS</div>
+                <div class="col-6 price2">$ {{saldos.saldo[0].gastos}} </div>
+            </div>
+        </div>
+        </div>
+        
+   </section>
+   <section class="margen">
+        <div class="row">
+            <div class="col-12 col-md-3 mt-5 cuentas">
+                <h5>MIS CUENTAS</h5>
+                <!-- Tarjetas de Movimientos -->
+
+                <div *ngFor="let tarjeta of tarjetas.tarjeta" >
+                    <div [ngClass]="{'tCard2':tarjeta.estado == 'desactivada'}" class="card mb-3 container tCard">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title titleCard">{{tarjeta.estado | titlecase}}</h5>
+                                </div>
+                                <div class="col-6">
+                                    <span class="cantCard">{{tarjeta.saldo | currency}}</span>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                <span class="num">{{tarjeta.tarjeta}}</span>
+                                <br>
+                                {{tarjeta.nombre}}
+                                <br>
+                                {{tarjeta.tipo | titlecase}}
+                            </p>
+                            <img class="mcImg" src="assets/img/mc.png" alt="MasterCard">
+                        </div>
+                    </div>
+                </div>
+                
+                <app-modal></app-modal>
+
+                    
+                <!-- Tarjetas de Movimientos -->
+
+            </div>
+            <div class="col-12 col-md-auto mt-5 movimientos">
+                <h5>MOVIMIENTOS</h5>
+                <!-- Tabla Movimientos -->
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Monto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let movimiento of movimientos.movimiento">
+                        <th scope="row">{{movimiento.fecha}}</th>
+                            <td> {{movimiento.descripcion}} </td>
+                            <td>{{movimiento.monto | currency}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Tabla Moviemintos -->
+            </div>
+        </div>
+   </section>
+</main>

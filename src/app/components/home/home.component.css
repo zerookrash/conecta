@@ -18,7 +18,7 @@ main {
 }
 
 .wcard {
-    width: 25rem;
+    width: 20rem;
     height: 5rem;
     margin: auto 3rem;
     text-align: start;
@@ -39,7 +39,14 @@ main {
 .titleC {
     color: #0791bf;
     font-size: 10px;
+    float: left;
 }
+
+.cantCard {
+    font-size: 12px;
+    float: right;
+}
+
 
 .price {
     color: #07be92;
@@ -65,11 +72,6 @@ main {
     float: left;
 }
 
-.cantCard {
-    font-size: 12px;
-    margin-left: 6.5rem;
-}
-
 .cantCard2 {
     font-size: 12px;
     margin-left: 5rem;
@@ -83,6 +85,8 @@ main {
 /* Cuentas */
 /* Tabal Moviemintos */
 table {
+    width: 100%;
+    margin: 3rem;
     background-color: #ffffff;
     color: #9c9c9c;
 }

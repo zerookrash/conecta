@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // Components
-import { HomeComponent } from './componets/home/home.component';
-import { DineroComponent } from './componets/dinero/dinero.component';
-import { ModalComponent } from './componets/home/components/modal/modal.component';
+import { HomeComponent } from './components/home/home.component';
+import { DineroComponent } from './components/dinero/dinero.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 
 const routes: Routes = [

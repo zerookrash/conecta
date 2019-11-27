@@ -16,9 +16,9 @@
             </li>
           </ul>
           <div class="datos">
-              <ul>
-                  <li class="text-right nombre">Octavio Martinez</li>
-                  <li class="text-right fecha">Último inicio: 18/07/2019</li>
+              <ul *ngIf="cuenta">
+                  <li class="text-right nombre"> {{Cuenta.cuenta[0].nombre}} </li>
+                  <li class="text-right fecha"> Último inicio: {{Cuenta.cuenta[0].ultima_sesion | date:'shortDate'}} </li>
               </ul>
           </div>
         </div>
