@@ -16,7 +16,7 @@
             </li>
           </ul>
           <div class="datos">
-              <ul *ngIf="cuenta">
+              <ul>
                   <li class="text-right nombre"> {{Cuenta.cuenta[0].nombre}} </li>
                   <li class="text-right fecha"> Último inicio: {{Cuenta.cuenta[0].ultima_sesion | date:'shortDate'}} </li>
               </ul>
